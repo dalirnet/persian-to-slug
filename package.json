@@ -1,0 +1,37 @@
+{
+  "name": "persian-slug",
+  "version": "1.0.0",
+  "description": "Slugifies persian (simple and clean)",
+  "main": "index.js",
+  "scripts": {
+    "release": "npx webpack --config webpack.config.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalirnet/persian-slug.git"
+  },
+  "keywords": [
+    "persian",
+    "slug",
+    "farsi",
+    "iran",
+    "url"
+  ],
+  "author": "AmirRezaDalir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dalirnet/persian-slug/issues"
+  },
+  "homepage": "https://github.com/dalirnet/persian-slug#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@babel/runtime": "^7.10.0",
+    "babel-loader": "^8.1.0",
+    "jest": "^26.0.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

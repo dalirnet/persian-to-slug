@@ -5,6 +5,12 @@ Slugifies persian (simple and clean)
 
 ## Use
 
+-   CDN
+```html
+<script src="https://unpkg.com/persian-to-slug@latest/dist/persian-to-slug.js"></script>
+```
+
+-   Npm
 ```javascript
 const PersianToSlug = require("persian-to-slug");
 

@@ -2,7 +2,8 @@
 
 Slugifies persian (simple and clean)
 
-##Use
+
+## Use
 
 ```javascript
 const PersianSlug = require("persian-slug");
@@ -21,7 +22,7 @@ PersianSlug("عنوان Article، به زبان فارسی");
 /* => "title-article-language-farsi" */
 ```
 
-##Test
+## Test
 
 ```bash
 √ PersianSlug(

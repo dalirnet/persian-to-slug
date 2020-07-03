@@ -1,5 +1,5 @@
 {
-  "name": "persian-slug",
+  "name": "persian-to-slug",
   "version": "1.0.0",
   "description": "Slugifies persian (simple and clean)",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dalirnet/persian-slug.git"
+    "url": "git+https://github.com/dalirnet/persian-to-slug.git"
   },
   "keywords": [
     "persian",
@@ -21,9 +21,9 @@
   "author": "AmirRezaDalir",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dalirnet/persian-slug/issues"
+    "url": "https://github.com/dalirnet/persian-to-slug/issues"
   },
-  "homepage": "https://github.com/dalirnet/persian-slug#readme",
+  "homepage": "https://github.com/dalirnet/persian-to-slug#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.10.0",

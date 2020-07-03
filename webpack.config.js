@@ -4,8 +4,8 @@ const packageJson = require("./package.json");
 
 // banner
 let banner = `
-    PersianSlug v${packageJson.version}
-    url         https://github.com/dalirnet/persian-slug#readme
+    PersianToSlug v${packageJson.version}
+    url           https://github.com/dalirnet/persian-to-slug#readme
 `;
 
 module.exports = [
@@ -41,9 +41,9 @@ module.exports = [
       minimize: true,
     },
     output: {
-      filename: "persian-slug.js",
+      filename: "persian-to-slug.js",
       path: path.resolve(__dirname, "dist"),
-      library: "PersianSlug",
+      library: "PersianToSlug",
     },
     performance: {
       hints: false,

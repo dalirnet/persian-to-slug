@@ -1,4 +1,4 @@
-# persian-slug
+# persian-to-slug
 
 Slugifies persian (simple and clean)
 
@@ -6,10 +6,10 @@ Slugifies persian (simple and clean)
 ## Use
 
 ```javascript
-const PersianSlug = require("persian-slug");
+const PersianToSlug = require("persian-to-slug");
 
 /* 
-    PersianSlug(
+    PersianToSlug(
         input,
         part = 6,
         separator = "-",
@@ -17,7 +17,7 @@ const PersianSlug = require("persian-slug");
     )
 */
 
-PersianSlug("عنوان Article، به زبان فارسی");
+PersianToSlug("عنوان Article، به زبان فارسی");
 
 /* => "title-article-language-farsi" */
 ```
@@ -25,14 +25,14 @@ PersianSlug("عنوان Article، به زبان فارسی");
 ## Test
 
 ```bash
-√ PersianSlug(
+√ PersianToSlug(
     "عنوان Article، به زبان فارسی"
     )
 
     => "title-article-language-farsi" (8 ms)
 
 
-√ PersianSlug(
+√ PersianToSlug(
     "عنوان Article، به زبان فارسی",
     2
     )
@@ -40,7 +40,7 @@ PersianSlug("عنوان Article، به زبان فارسی");
     => "title-article" (1 ms)
 
 
-√ PersianSlug(
+√ PersianToSlug(
     "عنوان Article، به زبان فارسی",
     3,
     "_"
@@ -49,7 +49,7 @@ PersianSlug("عنوان Article، به زبان فارسی");
     => "title_article_language" (1 ms)
 
 
-√ PersianSlug(
+√ PersianToSlug(
     "عنوان Article، به زبان فارسی",
     6,
     "___",

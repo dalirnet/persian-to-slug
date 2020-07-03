@@ -1,6 +1,6 @@
 {
   "name": "persian-to-slug",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Slugifies persian (simple and clean)",
   "main": "index.js",
   "scripts": {

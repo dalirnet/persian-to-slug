@@ -1,0 +1,2 @@
+# persian-slug
+Slugifies persian

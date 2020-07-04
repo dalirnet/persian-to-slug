@@ -30,7 +30,7 @@ module.exports = (input, part = 6, separator = "-", myWords = {}) => {
     } else {
       Object.entries(letters).forEach(([fa, en]) => {
         keep.fa[key].value = keep.fa[key].value.replace(
-          new RegExp(`[${fa}]`, "g"),
+          new RegExp(`(${fa})`, "g"),
           en
         );
       });

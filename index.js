@@ -19,7 +19,11 @@ module.exports = (input, part = 6, separator = "-", myWords = {}) => {
       ""
     )
     .split("-")
-    .filter((value) => value.length > 2)
+    .filter((value) => {
+      if (!isNaN(value))
+        return true;
+      return value.length > 2
+    })
     .forEach((value, key) => {
       keep[value.match(new RegExp("[a-z]")) ? "en" : "fa"].push({ key, value });
     });

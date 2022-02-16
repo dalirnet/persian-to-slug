@@ -15,10 +15,14 @@ module.exports = (input, part = 6, separator = "-", myWords = {}) => {
     .replace(/\s\s+/g, " ")
     .replace(/\s/g, "-")
     .replace(
-      new RegExp(`[^\-a-z0-9${Object.keys(letters).join("")}\s\S]`, "g"),
+      new RegExp(`[^\-a-z٠-٩۰-۹0-9${Object.keys(letters).join("")}\s\S]`, "g"),
       ""
     )
     .split("-")
+    .map(value => 
+        value.replace(/[٠-٩]/g, ch => "٠١٢٣٤٥٦٧٨٩".indexOf(ch))
+             .replace(/[۰-۹]/g, ch => "۰۱۲۳۴۵۶۷۸۹".indexOf(ch))
+    )
     .filter((value) => {
       if (!isNaN(value))
         return true;

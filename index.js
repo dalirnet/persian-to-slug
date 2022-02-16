@@ -19,6 +19,7 @@ module.exports = (input, part = 6, separator = "-", myWords = {}) => {
       ""
     )
     .split("-")
+    .map(value => value.replace(/[٠-٩]/g, ch => "٠١٢٣٤٥٦٧٨٩".indexOf(ch)))
     .filter((value) => {
       if (!isNaN(value))
         return true;

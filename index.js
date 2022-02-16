@@ -15,14 +15,14 @@ module.exports = (input, part = 6, separator = "-", myWords = {}) => {
     .replace(/\s\s+/g, " ")
     .replace(/\s/g, "-")
     .replace(
-      new RegExp(`[^\-a-z${Object.keys(letters).join("")}\s\S]`, "g"),
+      new RegExp(`[^\-a-z0-9${Object.keys(letters).join("")}\s\S]`, "g"),
       ""
     )
     .split("-")
     .filter((value) => {
       if (!isNaN(value))
         return true;
-      return value.length > 2
+      return value.length > 2;
     })
     .forEach((value, key) => {
       keep[value.match(new RegExp("[a-z]")) ? "en" : "fa"].push({ key, value });

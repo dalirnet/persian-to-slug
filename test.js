@@ -5,6 +5,10 @@ test(`PersianToSlug("اهواز")\n\t"ahvaz"`, () => {
   expect(PersianToSlug("اهواز")).toBe("ahvaz");
 });
 
+test(`PersianToSlug("خانه 50 متری")\n\t"house-50-mtri"`, () => {
+  expect(PersianToSlug("خانه 50 متری")).toBe("house-50-mtri");
+});
+
 test(`PersianToSlug("${input}")\n\t"title-article-language-farsi"`, () => {
   expect(PersianToSlug(input)).toBe("title-article-language-farsi");
 });
